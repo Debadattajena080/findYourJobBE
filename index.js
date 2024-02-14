@@ -10,9 +10,7 @@ const PORT = 5000;
 DB_URL = "mongodb://127.0.0.1:27017/JobSeekers";
 app.use(express.json());
 mongoose
-  .connect(DB_URL,{
-    family: 4,
-  })
+  .connect(DB_URL)
   .then(() => {
     console.log("Db is connected successfully");
     app.listen(PORT, () => {

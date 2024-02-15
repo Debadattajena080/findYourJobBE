@@ -7,7 +7,7 @@ const jobRouters = require("./routes/jobRoutes")
 
 app.use(cors());
 const PORT = 5000;
-DB_URL = "mongodb://127.0.0.1:27017";
+DB_URL = "mongodb://0.0.0.0:27017";
 app.use(express.json());
 mongoose
   .connect(DB_URL)
